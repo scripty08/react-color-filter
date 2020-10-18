@@ -20,4 +20,8 @@ sed -i "s/ReactSkeleton/$component/" $reactSkeletonJsx
 sed -i "s/react-skeleton/$package/" $reactSkeletonJsx
 sed -i "s/ReactSkeleton/$component/" $indexJsx
 sed -i "s/react-skeleton/$package/" $serverJs
+
+mv src/ReactSkeleton.jsx src/$component.jsx
+
+git add src/$component.jsx
 fi
