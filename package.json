@@ -1,6 +1,6 @@
 {
   "name": "@scripty/react-skeleton",
-  "version": "0.1.7",
+  "version": "0.1.0",
   "author": "Danijel Garic",
   "license": "MIT",
   "description": "",
@@ -36,7 +36,6 @@
     "@babel/preset-react": "^7.7.4",
     "@hot-loader/react-dom": "^16.11.0",
     "@scripty/react-examples": "0.1.2",
-    "@scripty/react-inputs": "^0.1.5",
     "@scripty/server": "^0.2.0",
     "@scripty/webpack-after-compile-plugin": "^0.2.3",
     "babel-loader": "^8.0.6",

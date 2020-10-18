@@ -1,16 +1,19 @@
 import React from 'react';
+import '@atlaskit/css-reset';
+import { hot } from 'react-hot-loader/root';
+
 import { Description, Code, Component, Properties } from '@scripty/react-examples';
 import { ReactSkeleton } from '../../src';
 
-export const Example = () => {
+const Example = () => {
 
-    const code = `import { ReactSkeleton } from '@scripty/react-skeleton';
+    const code = `import React from 'react';
+import { ReactSkeleton } from '@scripty/react-skeleton';
 
 const App = () => {
     return <ReactSkeleton color={'#000'}/>
 }
 `
-
     const propertiesData = [
         {
             property: 'color',
@@ -21,7 +24,7 @@ const App = () => {
     ]
 
     return (
-        <Description title={'Simple Description Component'}>
+        <Description title={'React Skeleton'}>
             <Component>
                 <ReactSkeleton color={'#000'}/>
             </Component>
@@ -34,3 +37,5 @@ const App = () => {
         </Description>
     );
 };
+
+export default hot(Example);
