@@ -1,0 +1,31 @@
+{
+  "presets": [
+    "@babel/preset-env",
+    "@babel/preset-react"
+  ],
+  "plugins": [
+    [
+      "module-resolver",
+      {
+        "root": [
+          "./client"
+        ],
+        "alias": {
+          "@client": "./src/client",
+          "@server": "./src/server"
+        }
+      },
+      "react-hot-loader/babel"
+    ],
+    [
+      "@babel/plugin-transform-runtime"
+    ],
+    [
+      "@babel/plugin-proposal-class-properties"
+    ],
+    [
+      "@babel/plugin-syntax-import-meta"
+    ]
+  ]
+}
+

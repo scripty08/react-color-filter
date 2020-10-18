@@ -1,0 +1,7 @@
+.idea/
+.scannerwork/
+/coverage/
+/lib/
+/dist/
+/node_modules/
+npm-debug.log

@@ -1,0 +1,67 @@
+{
+  "name": "@scripty/react-skeleton",
+  "version": "0.1.7",
+  "author": "Danijel Garic",
+  "license": "MIT",
+  "description": "",
+  "homepage": "https://garic.biz",
+  "keywords": [
+    "react-skeleton"
+  ],
+  "extension": "js",
+  "jsnext:main": "src/index.jsx",
+  "main": "lib/index.js",
+  "repository": "scripty08/react-skeleton",
+  "scripts": {
+    "webpack": "node node_modules/webpack/bin/webpack.js --config webpack.config.cjs",
+    "start": "SET NODE_ENV=development&& nodemon --no-warnings --es-module-specifier-resolution=node ./examples/server/server.js",
+    "start:prod": "node --no-warnings --es-module-specifier-resolution=node ./examples/server/server.js",
+    "bundle": "webpack --config webpack.config.prod.cjs --colors",
+    "compile": "node node_modules/@babel/cli/bin/babel.js src --out-dir lib --copy-files"
+  },
+  "dependencies": {
+    "prop-types": "^15.7.2",
+    "react": "16.11.0",
+    "react-dom": "16.11.0",
+    "styled-components": "^5.1.1"
+  },
+  "devDependencies": {
+    "@atlaskit/css-reset": "^6.0.0",
+    "@babel/cli": "^7.7.7",
+    "@babel/core": "^7.7.7",
+    "@babel/plugin-proposal-class-properties": "^7.8.3",
+    "@babel/plugin-syntax-import-meta": "^7.8.3",
+    "@babel/plugin-transform-runtime": "^7.8.3",
+    "@babel/preset-env": "^7.7.7",
+    "@babel/preset-react": "^7.7.4",
+    "@hot-loader/react-dom": "^16.11.0",
+    "@scripty/react-inputs": "^0.1.5",
+    "@scripty/server": "^0.2.0",
+    "@scripty/webpack-after-compile-plugin": "^0.2.3",
+    "babel-loader": "^8.0.6",
+    "babel-plugin-import": "^1.13.0",
+    "babel-plugin-module-resolver": "^3.2.0",
+    "css-loader": "^3.4.1",
+    "file-loader": "^6.0.0",
+    "node-sass": "^4.13.1",
+    "nodemon": "^2.0.2",
+    "optimize-css-assets-webpack-plugin": "^5.0.3",
+    "react-hot-loader": "^4.12.18",
+    "sass-loader": "^8.0.0",
+    "style-loader": "^1.1.2",
+    "table": "^6.0.3",
+    "terser-webpack-plugin": "^2.3.5",
+    "webpack": "^4.41.5",
+    "webpack-cli": "^3.3.8",
+    "webpack-dev-middleware": "^3.7.2",
+    "webpack-hot-middleware": "^2.25.0",
+    "webpack-merge": "^4.2.2"
+  },
+  "nodemonConfig": {
+    "ignore": [
+      "test/*"
+    ],
+    "legacyWatch": true
+  },
+  "type": "module"
+}
