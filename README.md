@@ -12,7 +12,7 @@ npm install -s @scripty/react-skeleton
 ##### Client: Example.jsx
 
 ```javascript
-import React, { Fragment } from 'react';
+import React from 'react';
 import { ReactSkeleton } from '@scripty/react-skeleton';
 
 export const Example = () => {

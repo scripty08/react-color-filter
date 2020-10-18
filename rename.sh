@@ -6,6 +6,7 @@ exampleJsx="examples/client/Example.jsx"
 reactSkeletonJsx="src/ReactSkeleton.jsx"
 indexJsx="src/index.jsx"
 serverJs="examples/server/server.js"
+readmeMd="README.md"
 
 # Take the replace string
 read -p "Enter new package name: " package
@@ -20,6 +21,8 @@ sed -i "s/ReactSkeleton/$component/" $reactSkeletonJsx
 sed -i "s/react-skeleton/$package/" $reactSkeletonJsx
 sed -i "s/ReactSkeleton/$component/" $indexJsx
 sed -i "s/react-skeleton/$package/" $serverJs
+sed -i "s/react-skeleton/$package/" $readmeMd
+sed -i "s/ReactSkeleton/$component/" $readmeMd
 
 mv src/ReactSkeleton.jsx src/$component.jsx
 
