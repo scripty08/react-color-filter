@@ -1,17 +1,17 @@
 {
-  "name": "@scripty/react-skeleton",
+  "name": "@scripty/react-color-filter",
   "version": "0.1.0",
   "author": "Danijel Garic",
   "license": "MIT",
   "description": "",
   "homepage": "https://garic.biz",
   "keywords": [
-    "react-skeleton"
+    "react-color-filter"
   ],
   "extension": "js",
   "jsnext:main": "src/index.jsx",
   "main": "lib/index.js",
-  "repository": "scripty08/react-skeleton",
+  "repository": "scripty08/react-color-filter",
   "scripts": {
     "webpack": "node node_modules/webpack/bin/webpack.js --config webpack.config.cjs",
     "start": "SET NODE_ENV=development&& nodemon --no-warnings --es-module-specifier-resolution=node ./examples/server/server.js",

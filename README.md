@@ -1,24 +1,24 @@
-# @scripty/react-skeleton
+# @scripty/react-color-filter
 
 # Description
 
-react-skeleton component.
+react-color-filter component.
 
 # Usage
 ```bash
-npm install -s @scripty/react-skeleton
+npm install -s @scripty/react-color-filter
 ```
 
 ##### Client: Example.jsx
 
 ```javascript
 import React from 'react';
-import { ReactSkeleton } from '@scripty/react-skeleton';
+import { ColorFilter } from '@scripty/react-color-filter';
 
 export const Example = () => {
 
     return (
-        <ReactSkeleton />
+        <ColorFilter />
     );
 };
 ```

@@ -1,1 +1,1 @@
-export * from './ReactSkeleton';
+export * from './ColorFilter';

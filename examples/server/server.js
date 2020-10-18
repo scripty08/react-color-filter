@@ -2,7 +2,7 @@ import { Server, IndexController } from '@scripty/server';
 
 const init = async () => {
     let app = new Server();
-    await app.addController(new IndexController({ title: '@scripty/react-skeleton' }));
+    await app.addController(new IndexController({ title: '@scripty/react-color-filter' }));
     app.start(3001);
 };
 
