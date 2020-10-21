@@ -24,7 +24,7 @@ const App = () => {
 
     const propertiesData = [
         {
-            property: 'color',
+            property: 'colors',
             description: 'list of hex colors',
             type: 'array',
             default: ''
