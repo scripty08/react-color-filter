@@ -12,13 +12,13 @@ npm install -s @scripty/react-color-filter
 ##### Client: Example.jsx
 
 ```javascript
-import React from 'react';
+import React, {useState} from 'react';
 import { ColorFilter } from '@scripty/react-color-filter';
 
-export const Example = () => {
+const App = () => {
+    const [colors] = useState(['#cd1212', '#53e239']);
+    const [filter, setFilter] = useState(['#cd1212']);
 
-    return (
-        <ColorFilter />
-    );
-};
+    return <ColorFilter setFilter={setFilter} colors={colors} filter={filter} />;
+}
 ```
